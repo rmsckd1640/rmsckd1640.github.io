@@ -1,0 +1,1 @@
+{% include catof.html p=include.p %}<article class="row" data-tags="|{{ include.p.tags | join: '|' }}|"><h3><a href="{{ include.p.url | relative_url }}">{{ include.p.title }}</a></h3><p class="sum">{{ include.p.summary }}</p>{% include tags.html p=include.p %}<p class="meta">{{ include.p.date | date: '%Y년 %-m월 %-d일' }}</p></article>

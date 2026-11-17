@@ -1,0 +1,18 @@
+title: keunchang.log
+lang: ko
+timezone: Asia/Seoul
+url: "https://rmsckd1640.github.io"
+baseurl: ""
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: mathjax
+permalink: /posts/:title/
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+exclude: [vendor, Gemfile, Gemfile.lock, README.md, .bundle]
+series_list:
+  - { name: "알고리즘", slug: algorithm }
+  - { name: "스프링 핵심 원리 - 기본편", slug: spring-core }
